@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 224
+  Height = 399
+  Top = 187
+  Width = 666
+  Caption = 'Form1'
+  ClientHeight = 399
+  ClientWidth = 666
+  LCLVersion = '1.0.12.0'
+  object ListBox1: TListBox
+    Left = 8
+    Height = 327
+    Top = 40
+    Width = 128
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 128
+    Caption = 'Zufallszahlen erzeugen'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 144
+    Height = 25
+    Top = 8
+    Width = 128
+    Caption = 'Zahlen ordnen'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object ListBox2: TListBox
+    Left = 144
+    Height = 327
+    Top = 40
+    Width = 128
+    ItemHeight = 0
+    TabOrder = 3
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 280
+    Height = 352
+    Top = 8
+    Width = 131
+    AutoFill = True
+    Caption = 'Sortieralgorithmus'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 334
+    ClientWidth = 127
+    ItemIndex = 0
+    Items.Strings = (
+      'BubbleSort'
+      'QuickSort'
+    )
+    TabOrder = 4
+  end
+  object BarChart1: TBarChart
+    Left = 432
+    Height = 351
+    Top = 16
+    Width = 216
+    Caption = 'Zahlen'
+    ParentBidiMode = False
+    TabOrder = 5
+    Bars = <>
+    Depth = 5
+    LabelPosition = plLeft
+  end
+end
